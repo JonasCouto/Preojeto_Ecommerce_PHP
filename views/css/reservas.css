@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0px;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Modern Antiqua', cursive;
+}
+
+nav,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    padding: 2px 6px;
+}
+
+a:hover,
+a:active {
+    opacity: 1;
+    color: #8257E6;
+    border-bottom: 4px solid #8257E6;
+}
+
+
+/* Header */
+
+
+/* JULIANO DEIXAR PADRAO NAV */
+
+header {
+    background-color: #000;
+    width: 100%;
+    min-width: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px;
+    /* display: none; */
+}
+
+header img {
+    width: 200px;
+}
+
+header nav {
+    display: flex;
+}
+
+header li a {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+header li {
+    padding: 30px 10px;
+}
+
+header li:first-child {
+    margin-left: 0;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+header .menu {
+    display: flex;
+    flex-grow: 1;
+}
+
+header .nav-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .item-nav {
+    margin: 0 auto;
+}
+
+nav .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+@media (max-width: 14300px) {
+    header {
+        flex-direction: column;
+    }
+    header img {
+        margin-bottom: 10px;
+    }
+    header .item-nav {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 1410px) and (max-width: 1255px) {
+    .menu a {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 1250x) and (max-width: 1000px) {
+    .menu a {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 789px) {
+    .menu a {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .menu a {
+        font-size: 1.0rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .menu a {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .menu a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .menu a {
+        font-size: 7px;
+    }
+}
+
+.container-img {
+    margin-top: 220px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    display: flex;
+    height: 100vh;
+    height: 160px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-position: center;
+}
+
+.container-img p {
+    font-size: 65px;
+    margin: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-img p {
+        font-size: 70px;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 680px;
+    margin: 5px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+.content h1 {
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.form {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.top-form,
+.middle-form,
+.bottom-form {
+    width: 100%;
+    min-height: 65px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.form input[type="text"],
+.form textarea {
+    padding: 15px 5px;
+    box-sizing: border-box;
+    width: 99%;
+    border: 2px solid #000;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: #4ca14f;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0125), 0 0 8px rgba(76, 161, 175, 0.5);
+}
+
+.form .label {
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.top-form .inner-form {
+    width: 29.9%;
+    float: left;
+    margin-right: 5%;
+}
+
+.top-form .inner-form:last-child {
+    margin-right: 0;
+}
+
+.middle-form {
+    clear: both;
+}
+
+.bottom-form textarea {
+    height: 80px;
+}
+
+.btn {
+    width: 50%;
+    background-color: #8257E6;
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #266473;
+    padding: 15px;
+    outline: none;
+    color: #000;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        margin: 25px auto 0;
+    }
+    .top-form .inner-form {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+footer {
+    background-color: #000;
+    padding: 20px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 2.4rem;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #fff;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #8257E6;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 2.0rem;
+}
+
+.logo-facebook,
+.logo-googleplus,
+.logo-twitter,
+.logo-instagram {
+    transition: color 0.2s;
+}
+
+.logo-facebook:hover {
+    color: #3b5998;
+}
+
+.logo-twitter:hover {
+    color: #00aced;
+}
+
+.logo-googleplus:hover {
+    color: #dd4b39;
+}
+
+.logo-instagram:hover {
+    color: #517fa4;
+}
+
+footer .footer-paragrafo {
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 1.4rem;
+}
+
+.promo-footer {
+    width: 100vh;
+    min-width: 100%;
+}
+
+@media only screen and (max-width: 800px) and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+    footer p {
+        margin-bottom: 0px;
+        font-size: 1.2rem;
+    }
+}

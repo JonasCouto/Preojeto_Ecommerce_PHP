@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Modern Antiqua', cursive;
+}
+
+
+/* container-img */
+
+.container-img {
+    height: 100vh;
+    /*background-image: url("../img/landingPage/flat-lay-burgers-fries-with-copy-space\ 1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* não repete a img depois do termino*/
+    /*background-position: center center;*/
+    /*cetraliza a img*/
+}
+
+
+/*Ajustando a DIV vermelha*/
+
+.content {
+    /*border: red solid 1px;*/
+    height: 95%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*Ajustando a DIV azul*/
+
+.group {
+    /*border: blue solid 1px;*/
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    /*direção dos elementos fica em colunas*/
+    margin-left: auto;
+    /*margin do lado direto fica tudo a direita*/
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    margin: 0 auto;
+    width: 100%;
+    padding: 50px 25px 20px 25px;
+    box-sizing: border-box;
+}
+
+.botao {
+    padding: 15px;
+    font: 'Modern Antiqua', cursive;
+    margin: 40px 60px 20px 60px;
+    cursor: pointer;
+    text-decoration: none;
+    background: #8257E6;
+    color: #FFF;
+    border: 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0);
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 0 2px #8257E6;
+}
+
+body {
+    min-width: 300px;
+    background-image: url("../img/landingPage/flat-lay-burgers-fries-with-copy-space\ 1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* não repete a img depois do termino*/
+    background-position: center center;
+    /*cetraliza a img*/
+}
+
+@media(min-width:450px) {
+    .group {
+        width: 350px;
+    }
+    img.logo {
+        width: 300px;
+    }
+}

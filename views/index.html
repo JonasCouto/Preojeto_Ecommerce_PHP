@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" type="text/css" href="./css/franqueado.css">
+    <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="menu">
+        <img src="./css/img/logo2.png" alt="E-commerce">
+        <nav>
+            <li><a id="menu-home" href="#">Home</a></li>
+            <li>
+                <a id="menu-cliente" href="#">Cliente</a>
+            </li>
+            <li><a id="menu-produto" href="#">Produtos</a></li>
+        </nav>
+    </header>
+
+
+    <section id="landing" class="container-img">
+        <div class="content">
+
+            <div class="group">
+
+
+                <form>
+                    <label for="nome"><b>Login</b></label>
+                    <input type="text" placeholder="Enter Username" name="login" required>
+                    <label for="psw"><b>Senha</b></label>
+                    <input type="password" placeholder="Enter Password" name="senha" required>
+                    <input type="submit" name="submit" value="login" class="botao">
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <section id="home" class="container-img">
+        <p>
+            A E-commerce foi criada para tratar o cliente com excelencia em época de pandemia.
+        </p>
+    </section>
+
+    <section id="form-cliente" class="container-formulario-conteudo">
+        <div class="registroformulario">
+            <h1>Formulário de Cadastro</h1>
+        </div>
+        <form>
+            <label>Nome Completo</label>
+            <input type="text" name="nome">
+
+            <label>Idade</label>
+            <input type="text" name="idade">
+
+            <label>E-mail</label>
+            <input type="text" name="email">
+
+            <label>Telefone</label>
+            <input type="text" name="telefone">
+
+            <label>Cep</label>
+            <input type="text" name="cep">
+
+            <label>Endereço</label>
+            <input type="text" name="endereco">
+
+            <label>Login</label>
+            <input type="text" name="login">
+
+            <label>Senha</label>
+            <input type="text" name="senha">
+
+
+            <input type="submit" name="submit" value="Enviar" class="botao">
+
+        </form>
+        <p id="menssagem-cliente"></p>
+
+    </section>
+
+    <section id="form-produto" class="container-formulario-conteudo">
+        <form>
+            <div class="registroformulario">
+                <h1>Formulário de Cadastro</h1>
+            </div>
+            <label>Nome</label>
+            <input type="text" name="nome">
+
+            <label>Valor</label>
+            <input type="text" name="valor">
+
+            <input type="submit" name="submit" value="Enviar" class="botao">
+
+        </form>
+        <p id="menssagem-produto"></p>
+
+    </section>
+
+    <section id="listar-cliente" class="container-formulario-conteudo">
+        <a id="menu-cadastrar-cliente" href="#">Cadastrar Cliente</a>
+        <h2>Tabela de Clientes</h2>
+        <div id="tabela">
+            <table border="1">
+                <tr>
+                    <th style='text-align: left;'>Id</th>
+                    <th style='text-align: left;'>Nome</th>
+                    <th style='text-align: left;'>Idade</th>
+                    <th style='text-align: left;'>E-mail</th>
+                    <th style='text-align: left;'>Telefone</th>
+                    <th style='text-align: left;'>Endereço</th>
+                    <th style='text-align: left;'>Login</th>
+                    <th style='text-align: left;'>Senha</th>
+                    <th style='text-align: left;'>Editar</th>
+                    <th style='text-align: left;'>Deletar</th>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+
+
+    <section id="listar-produto" class="container-formulario-conteudo">
+        <a id="menu-cadastrar-produto" href="#">Cadastrar Produto</a>
+        <h2>Tabela de Produtos</h2>
+        <div id="tabela-produto">
+            <table border="1">
+                <tr>
+                    <th style='text-align: left;'>Id</th>
+                    <th style='text-align: left;'>Nome</th>
+                    <th style='text-align: left;'>Preço</th>
+                    <th style='text-align: left;'>Editar</th>
+                    <th style='text-align: left;'>Deletar</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer class="promo-footer">
+        <div>
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">Nosso E-commerce é o melhor.</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <ion-icon class="logo-instagram" name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ion-icon class="logo-googleplus" name="logo-googleplus"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ion-icon class="logo-twitter" name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p>Copyright &copy; 2020 E-commerce Todos os direitos reservados.</p>
+        </div>
+        </ul>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./js/listar-cliente.js"></script>
+    <script src="./js/listar-produto.js"></script>
+    <script src="./js/cadastro-cliente.js"></script>
+    <script src="./js/cadastro-produto.js"></script>
+    <script src="./js/landing.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+
+            $(document).on('click', '#landing', function(event) {
+                $('#landing').show();
+                $('#home').hide();
+                $('#form-cliente').hide();
+                $('#form-produto').hide();
+                $('#listar-cliente').hide();
+                $('#listar-produto').hide();
+
+
+            });
+
+
+
+
+
+            $(document).on('click', '#menu-home', function(event) {
+                $('#home').show();
+                $('#landing').hide();
+                $('#form-cliente').hide();
+                $('#form-produto').hide();
+                $('#listar-cliente').hide();
+                $('#listar-produto').hide();
+
+
+            });
+
+            $(document).on('click', '#menu-cliente', function(event) {
+                $('#listar-cliente').show();
+                $('#landing').hide();
+                $('#home').hide();
+                $('#form-cliente').hide();
+                $('#form-produto').hide();
+                $('#listar-produto').hide();
+                listarCliente();
+
+            });
+
+            $(document).on('click', '#menu-cadastrar-cliente', function(event) {
+                $('#form-cliente').show();
+                $('#landing').hide();
+                $('#listar-cliente').hide();
+                cadastroCliente();
+
+            });
+
+
+            $(document).on('click', '#menu-produto', function(event) {
+                $('#listar-produto').show();
+                $('#landing').hide();
+                $('#home').hide();
+                $('#form-cliente').hide();
+                $('#form-produto').hide();
+                $('#listar-cliente').hide();
+                listarProduto();
+
+            });
+
+            $(document).on('click', '#menu-cadastrar-produto', function(event) {
+                $('#form-produto').show();
+                $('#landing').hide();
+                $('#listar-produto').hide();
+                cadastroProduto();
+
+
+            });
+
+
+        });
+    </script>
+
+</body>
+
+</html>
